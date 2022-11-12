@@ -8,18 +8,17 @@ zomato.use(express.json());
 zomato.get("/",(req,res) => {
     res.json({
         message:"Server is running",
-
     });
 });
-const port = 4000;
-zomato.listen(port,() =>{
-//     ConnectDB()
-//     .then(() => {
-//       console.log("Server is running!!!");
-//     })
-//    .catch((error) => {
-//         console.log("Server is running,but database connection failed....");
-//         console.log("error");
-//    });
-console.log("Server is running!!!");
+const PORT = 4000;
+zomato.listen(PORT,() =>{
+    ConnectDB()
+    .then(() => {
+      console.log("Server is running!!!");
+    })
+   .catch((error) => {
+        console.log("Server is running,but database connection failed....");
+        console.log("error");
+   });
+
 });
