@@ -18,7 +18,7 @@ Router.get(
   async (req, res) => {
     try {
       const { user } = req;
-
+      
       const getOrders = await OrderModel.findOne({ user: user._id });
 
       if (!getOrders) {
@@ -36,7 +36,7 @@ Router.get(
  * Route     /new
  * Des       Add new order
  * Params    none
- * Access    Private
+ * Access    Private   
  * Method    PUT
  */
 Router.put(
@@ -65,6 +65,7 @@ Router.put(
       return res.json({ order: addNewOrder });
     } catch (error) {
       return res.status(500).json({ error: error.message });
+
     }
   }
 );
