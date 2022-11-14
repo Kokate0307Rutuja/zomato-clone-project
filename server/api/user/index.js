@@ -11,15 +11,19 @@ const Router = express.Router();
  * Access    Private
  * Method    GET
  */
-Router.get( "/", passport.authenticate("jwt", { session: false }), async (req, res) => {
-  try {
-    const { email, fullName, phoneNumber, address } = req.user;
+Router.get(
+  "/",
+  passport.authenticate("jwt", { session: false }),
+  async (req, res) => {
+    try {
+      const { email, fullName, phoneNumber, address } = req.user;
 
-    return res.json({ user: { email, fullName, phoneNumber, address } });
-  } catch (error) {
-    return res.status(500).json({ error: error.message });
+      return res.json({ user: { email, fullName, phoneNumber, address } });
+    } catch (error) {
+      return res.status(500).json({ error: error.message });
+    }
   }
-});
+);
 
 /**
  * Route     /:_id
@@ -28,7 +32,7 @@ Router.get( "/", passport.authenticate("jwt", { session: false }), async (req, r
  * Access    Public
  * Method    GET
  */
- Router.get("/:_id", async (req, res) => {
+Router.get("/:_id", async (req, res) => {
   try {
     const { _id } = req.params;
 
@@ -61,6 +65,8 @@ Router.put(
       const { _id } = req.params;
       const { userData } = req.body;
 
+      // Task: Validate User Data
+
       userData.password = undefined;
 
       const updateUserData = await UserModel.findByIdAndUpdate(
@@ -79,4 +85,5 @@ Router.put(
     }
   }
 );
+
 export default Router;
