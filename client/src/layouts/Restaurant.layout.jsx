@@ -10,7 +10,7 @@ import ImageGrid from "../components/Restaurant/ImageGrid";
 import InfoButton from "../components/Restaurant/InfoButton";
 import RestaurantInfo from "../components/Restaurant/RestaurantInfo";
 import Tabs from "../components/Restaurant/Tabs";
-//import CartContainer from "../components/Cart/CartContainer";
+import CartContainer from "../components/Cart/CartContainer";
 
 const RestaurantLayout = ({ children: Component, ...props }) => {
   const [restaurant, setRestaurant] = useState({
@@ -64,12 +64,12 @@ const RestaurantLayout = ({ children: Component, ...props }) => {
             <RiShareForwardLine /> Share
           </InfoButton>
         </div>
-        <div className="my-10">
+        <div className="my-10 sticky bg-white top-0 pt-2 z-10">
           <Tabs />
         </div>
         {Component}
       </div>
-      {/*<CartContainer />*/}
+      <CartContainer />
     </>
   );
 };
