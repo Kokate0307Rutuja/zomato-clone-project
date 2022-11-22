@@ -17,7 +17,4 @@ const InfoButton = ({ children, ...props }) => {
 };
 
 export default InfoButton;
-// Footer
-//  2022 GitHub, Inc.
-// Footer navigation
-// Terms5
+
