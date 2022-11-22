@@ -170,7 +170,7 @@ const Overview = () => {
               title="McDonald's"
               phno="+193423542345"
               mapLocation={getLatLong("28.64121406271755, 77.21955482132051")}
-              address="H-5/6, Plaza Building, Connaught Place, New Delhi"
+              address="H-5/6, Plaza Building, Connaught Place, pune"
             />
           </div>
         </div>
@@ -184,7 +184,7 @@ const Overview = () => {
           phno="+193423542345"
           mapLocation={getLatLong("28.64121406271755, 77.21955482132051")}
           latAndLong={"28.64121406271755, 77.21955482132051"}
-          address="H-5/6, Plaza Building, Connaught Place, New Delhi"
+          address="H-5/6, Plaza Building, Connaught Place, pune"
         />
       </aside>
     </div>
