@@ -1,24 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AiTwotoneStar } from "react-icons/ai";
 
+// redux
+import { useDispatch } from "react-redux";
+import { getImage } from "../redux/reducers/image/image.action";
+
 const RestaurantCard = (props) => {
   const [image, setImage] = useState({
-    images: [
-      {
-        location:
-          "https://b.zmtcdn.com/data/pictures/chains/9/13279/21f5059f5c291659fb5ea3e1a75ea0f1_o2_featured_v2.jpg",
-      },
-      {
-        Location:
-        "https://b.zmtcdn.com/data/pictures/1/19766731/bfa50cd7008c698789416c33b8dec301_o2_featured_v2.jpg",
-      }
-    ],
+    images: [],
   });
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getImage(props.photos)).then((data) => {
+      const images = data.payload.images;
+      setImage((prev) => ({ ...prev, images }));
+    });
+  }, [props.photos]);
 
   return (
     <Link
-    
       to={`/restaurant/${props._id}/overview`}
       // className="w-full md:w-1/2 lg:w-1/3"
     >
@@ -33,7 +36,7 @@ const RestaurantCard = (props) => {
               )}
               {props.isOff && (
                 <span className="bg-blue-600 text-white px-2 py-1 rounded text-sm">
-                  ₹250 OFF
+                  $250 OFF
                 </span>
               )}
             </div>
@@ -42,7 +45,6 @@ const RestaurantCard = (props) => {
               alt="food"
               className="w-full h-full rounded-2xl"
             />
-            
           </div>
           <div className="my-2 flex flex-col gap-2">
             <div className="flex items-center justify-between">

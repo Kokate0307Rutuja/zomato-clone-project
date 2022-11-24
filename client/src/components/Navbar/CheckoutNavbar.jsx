@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const CheckoutNavbar = () => {
   const [user] = useState({
-    fullName: "Aditya Gusain",
+    fullName: "Kokate Rutuja",
   });
 
   const navigate = useNavigate();
@@ -43,3 +43,11 @@ const CheckoutNavbar = () => {
 };
 
 export default CheckoutNavbar;
+
+
+// import { useSelector } from "react-redux";
+
+// const CheckoutNavbar = () => {
+//   const user = useSelector((globalState) => globalState.user);
+
+//   const navigate = useNavigate();
