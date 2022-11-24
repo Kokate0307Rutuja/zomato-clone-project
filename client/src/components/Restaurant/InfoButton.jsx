@@ -17,4 +17,3 @@ const InfoButton = ({ children, ...props }) => {
 };
 
 export default InfoButton;
-
