@@ -7,7 +7,11 @@ export const signIn = (userData) => async (dispatch) => {
   try {
     const User = await axios({
       method: "POST",
+<<<<<<< HEAD
       url: "http://localhost:4000/auth/signin",
+=======
+      url: `${process.env.REACT_APP_CLIENT_URL}auth/signin`,
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e
       data: { credentials: userData },
     });
 
@@ -30,7 +34,11 @@ export const signUp = (userData) => async (dispatch) => {
   try {
     const User = await axios({
       method: "POST",
+<<<<<<< HEAD
       url: "http://localhost:4000/auth/signup",
+=======
+      url: `${process.env.REACT_APP_CLIENT_URL}auth/signup`,
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e
       data: { credentials: userData },
     });
 

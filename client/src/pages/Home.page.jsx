@@ -35,4 +35,8 @@ const Home = () => {
   );
 };
 
+<<<<<<< HEAD
 export default HomeLayout(Home);
+=======
+export default HomeLayout(Home);
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

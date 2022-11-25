@@ -33,4 +33,8 @@ export const getSpecificRestaurant = (_id) => async (dispatch) => {
   } catch (error) {
     return dispatch({ type: "ERROR", payload: error });
   }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

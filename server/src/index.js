@@ -2,8 +2,11 @@ import express from "express";
 import dotenv from "dotenv";
 import passport from "passport";
 import session from "express-session";
+<<<<<<< HEAD
 import cors from "cors";
 import helmet from "helmet";
+=======
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e
 
 // Private route authorization config
 import privateRouteConfig from "./config/route.config";
@@ -30,8 +33,11 @@ const zomato = express();
 
 // adding additional passport configuration
 
+<<<<<<< HEAD
 zomato.use(cors({ origin: "http://localhost:3000" }));
 zomato.use(helmet());
+=======
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e
 zomato.use(express.json());
 zomato.use(session({ secret: process.env.JWTSECRET }));
 zomato.use(passport.initialize());
@@ -64,4 +70,8 @@ zomato.listen(PORT, () => {
       console.log("Server is running, but database connection failed...");
       console.log(error);
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

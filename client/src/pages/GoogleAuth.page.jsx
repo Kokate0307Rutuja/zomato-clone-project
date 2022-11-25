@@ -19,4 +19,8 @@ const GoogleAuth = () => {
   return <div>Loading, Please Wait...</div>;
 };
 
+<<<<<<< HEAD
 export default GoogleAuth;
+=======
+export default GoogleAuth;
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

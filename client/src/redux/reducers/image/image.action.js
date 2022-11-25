@@ -16,4 +16,8 @@ export const getImage = (_id) => async (dispatch) => {
   }
 };
 
+<<<<<<< HEAD
 export default getImage;
+=======
+export default getImage;
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

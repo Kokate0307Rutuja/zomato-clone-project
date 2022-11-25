@@ -181,7 +181,11 @@ const Overview = () => {
           phno="+193423542345"
           mapLocation={getLatLong("28.64121406271755, 77.21955482132051")}
           latAndLong={"28.64121406271755, 77.21955482132051"}
+<<<<<<< HEAD
           address="H-5/6, Plaza Building, Connaught Place, Pune"
+=======
+          address="H-5/6, Plaza Building, Connaught Place,Pune"
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e
         />
       </aside>
     </div>

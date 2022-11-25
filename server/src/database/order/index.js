@@ -31,3 +31,14 @@ const OrderSchema = new mongoose.Schema(
 );
 
 export const OrderModel = mongoose.model("orders", OrderSchema);
+<<<<<<< HEAD
+=======
+// Footer
+// © 2022 GitHub, Inc.
+// Footer navigation
+// Terms
+// Privacy
+// Security
+// Status
+// Docs
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

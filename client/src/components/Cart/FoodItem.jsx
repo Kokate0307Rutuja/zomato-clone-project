@@ -54,4 +54,8 @@ const FoodItem = (props) => {
   );
 };
 
+<<<<<<< HEAD
 export default FoodItem;
+=======
+export default FoodItem;
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

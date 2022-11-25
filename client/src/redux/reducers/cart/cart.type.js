@@ -3,4 +3,8 @@ export const UPDATE_CART = "UPDATE_CART";
 export const ADD_TO_CART = "ADD_TO_CART";
 export const DELETE_FROM_CART = "DELETE_FROM_CART";
 export const INCREMENT_QUANTITY = "INCREMENT_QUANTITY";
+<<<<<<< HEAD
 export const DECREMENT_QUANTITY = "DECREMENT_QUANTITY";
+=======
+export const DECREMENT_QUANTITY = "DECREMENT_QUANTITY";
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

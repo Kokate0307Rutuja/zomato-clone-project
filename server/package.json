@@ -14,17 +14,27 @@
   "dependencies": {
     "aws-sdk": "^2.1254.0",
     "bcryptjs": "^2.4.3",
+<<<<<<< HEAD
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "helmet": "^6.0.0",
+=======
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e
     "joi": "^17.7.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.2",
     "multer": "^1.4.5-lts.1",
     "passport": "^0.6.0",
     "passport-google-oauth2": "^0.2.0",
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e
     "passport-jwt": "^4.0.0"
   },
   "devDependencies": {

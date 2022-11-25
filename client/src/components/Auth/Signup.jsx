@@ -32,7 +32,11 @@ const Signup = ({ isOpen, setIsOpen }) => {
   };
 
   const googleSignUp = () =>
+<<<<<<< HEAD
     (window.location.href = "http://localhost:4000/auth/google");
+=======
+    (window.location.href = `${process.env.REACT_APP_CLIENT_URL}auth/google`);
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e
 
   return (
     <>
@@ -127,4 +131,8 @@ const Signup = ({ isOpen, setIsOpen }) => {
   );
 };
 
+<<<<<<< HEAD
 export default Signup;
+=======
+export default Signup;
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

@@ -12,4 +12,8 @@ if (process.env.NODE_ENV === "development") {
 
 const store = createStore(rootReducer, {}, applyMiddleware(...middlewares));
 
+<<<<<<< HEAD
 export default store;
+=======
+export default store;
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

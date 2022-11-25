@@ -26,4 +26,8 @@ const userReducer = (state = initialState, action) => {
   }
 };
 
+<<<<<<< HEAD
 export default userReducer;
+=======
+export default userReducer;
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e

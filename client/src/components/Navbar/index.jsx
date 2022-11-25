@@ -143,7 +143,11 @@ const LargeNav = ({
           </span>
           <input
             type="text"
+<<<<<<< HEAD
             placeholder="Pune"
+=======
+            placeholder="Delhi NCR"
+>>>>>>> 7460fece9fba6aeb9c662dc8843d90d77211f46e
             className="w-full focus:outline-none"
           />
           <IoMdArrowDropdown />
