@@ -6,7 +6,7 @@ Babel is used to build the project
 
 # API Documentation link
 
-https://documenter.getpostman.com/view/22926215/2s8Yeixw1R
+
 
 # => Documentation of Backend part of the site
 
